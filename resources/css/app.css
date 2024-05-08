@@ -1,3 +1,19 @@
+/*Imported fonts from Google Fonts (https://fonts.google.com/)*/
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400&family=Kumbh+Sans:wght@400;700&family=League+Gothic&family=Manrope:wght@800&family=Overpass:wght@400;700&family=Poppins:wght@500;700&family=Quicksand:wght@300;500&family=Roboto&display=swap');
+
+/*
+    Imported  Fonts:
+    
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'League Gothic', sans-serif;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
