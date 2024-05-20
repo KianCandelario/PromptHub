@@ -19,7 +19,8 @@
                         <h3 class="font-quicksand text-md opacity-65">Create an account</h3>
                     </div>
                 </div>
-                <form class="w-full flex flex-col justify-center items-center" action="" method="">
+                <form class="w-full flex flex-col justify-center items-center" action="/store" method="POST">
+                    @csrf
                     <div class="w-full flex flex-col">
                         <label class="ml-1 mb-1 text-white font-poppins text-xs" for="name">Username</label>
                         <input class="mb-3 py-3 px-4 text-xs font-quicksand rounded-md" id="name" name="name" type="text" placeholder="Enter username">
