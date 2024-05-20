@@ -23,7 +23,8 @@
         </div>
         <div class="w-[25%] h-full bg-dark-blue flex flex-col justify-center items-center">
             <div class="bg-light-grey h-[50%] w-[88%] rounded-xl">
-                <form class="w-full h-full flex flex-col justify-center items-center" action="" method="">
+                <form class="w-full h-full flex flex-col justify-center items-center" action="/login" method="POST">
+                    @csrf
                     <div class="w-[80%] mb-5">
                         <div class="flex items-center w-full">
                             <img class="h-14 mr-2" src="{{ asset('storage/material-symbols_login.svg') }}" alt="Login Icon">
@@ -33,12 +34,12 @@
                     </div>
                     <div class="w-[80%] mb-5">
                         <div class="flex flex-col w-full text-xs font-quicksand mb-3">
-                            <label class="text-white ml-1 mb-1" for="username">Username</label>
-                            <input class="py-2 px-3 rounded-md h-10" type="text" name="username" id="username" placeholder="Enter username">
+                            <label class="text-white ml-1 mb-1" for="email">Email</label>
+                            <input class="py-2 px-3 rounded-md h-10" type="text" name="email" id="email" placeholder="Enter email">
                         </div>
                         <div class="flex flex-col w-full text-xs font-quicksand mb-3">
-                            <label class="text-white ml-1 mb-1" for="username">Password</label>
-                            <input class="py-2 px-3 rounded-md h-10" type="password" name="username" id="username" placeholder="Enter password">
+                            <label class="text-white ml-1 mb-1" for="password">Password</label>
+                            <input class="py-2 px-3 rounded-md h-10" type="password" name="password" id="password" placeholder="Enter password">
                         </div>
                         <div class="text-white font-quicksand text-xs flex">
                             <input class="mr-2" type="checkbox" name="remember" id="remember">
