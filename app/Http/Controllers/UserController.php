@@ -27,4 +27,8 @@ class UserController extends Controller
 
         auth()->login($user);
     }
+  
+    public function signin() {
+        return view('login');
+    }
 }
