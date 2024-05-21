@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
+    public function landing_page() {
+        return view('index');
+    }
+
     public function signup() {
         return view('signup');
     }
