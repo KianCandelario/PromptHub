@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="w-screen h-screen bg-dark-grey text-white">
-        <header class="flex justify-between items-center h-[11%] border-b-[1px] px-20">
+        <header class="flex justify-between items-center h-[11%] w-full px-20">
             <a href="" class="font-poppins font-extrabold text-neon-green text-xl">Prompt<span class="text-white">Hub</span></a>
 
             <div>
@@ -32,10 +32,33 @@
                 </form>
 
                 <a class="ml-14" href="">
-                    <img class="h-8 w-8" src="{{ asset('storage/codicon_account.svg') }}" alt="">
+                    <img class="h-8 w-8" src="{{ asset('storage/codicon_account.svg') }}" alt="Login">
                 </a>
             </div>
         </header>
+        <div class="h-[89%] w-full px-20 flex flex-col items-center">
+            <div class="font-poppins text-5xl pt-7 pb-11 leading-relaxed text-center font-bold">
+                <h1>Empowering Your <span class="text-neon-green">Tech Journey</span>: <br />In-Depth Insights, Unbiased Reviews, <br /> and the Latest Innovations.</h1>
+            </div>
+            <div class="flex gap-14">
+                <div class="w-36 h-32 bg-dark-blue flex justify-center items-center rounded-xl border-2 border-neon-green shadow-lg shadow-slate-500 hover:scale-125 hover:shadow-lg hover:shadow-neon-green transition-all">
+                   <img class="h-20 w-20" src="{{ asset('storage/laravel.svg') }}" alt="Laravel">
+                </div>
+                <div class="top-7 relative w-36 h-32 bg-dark-blue flex justify-center items-center rounded-xl border-2 border-neon-green shadow-lg shadow-slate-500  hover:scale-125 hover:shadow-lg hover:shadow-neon-green transition">
+                   <img class="h-20 w-20" src="{{ asset('storage/tailwind.svg') }}" alt="Laravel">
+                </div>
+                <div class="w-36 h-32 bg-dark-blue flex justify-center items-center rounded-xl border-2 border-neon-green shadow-lg shadow-slate-500  hover:scale-125 hover:shadow-lg hover:shadow-neon-green transition">
+                   <img class="h-20 w-20" src="{{ asset('storage/vue.svg') }}" alt="Laravel">
+                </div>
+                <div class="top-7 relative w-36 h-32 bg-dark-blue flex justify-center items-center rounded-xl border-2 border-neon-green shadow-lg shadow-slate-500 hover:scale-125 hover:shadow-lg hover:shadow-neon-green transition">
+                   <img class="h-20 w-20" src="{{ asset('storage/php.svg') }}" alt="Laravel">
+                </div>
+                <div class="w-36 h-32 bg-dark-blue flex justify-center items-center rounded-xl border-2 border-neon-green shadow-lg shadow-slate-500  hover:scale-125 hover:shadow-lg hover:shadow-neon-green transition">
+                   <img class="h-20 w-20" src="{{ asset('storage/git.svg') }}" alt="Laravel">
+                </div>
+            </div>
+            <div></div>
+        </div>
     </div>
 </body>
 </html>
