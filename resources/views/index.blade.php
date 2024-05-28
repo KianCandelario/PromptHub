@@ -16,7 +16,7 @@
             <div>
                 <ul class="flex gap-11 font-poppins font-medium text-sm">
                     <li><a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[1.5px] after:bg-neon-green after:w-full after:scale-x-0 after:hover:scale-x-100 hover:text-neon-green after:transition after:duration-300 after:origin-left" href="">Home</a></li>
-                    <li><a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[1.5px] after:bg-neon-green after:w-full after:scale-x-0 after:hover:scale-x-100 hover:text-neon-green  after:transition after:duration-300 after:origin-center" href="">Blogs</a></li>
+                    <li><a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[1.5px] after:bg-neon-green after:w-full after:scale-x-0 after:hover:scale-x-100 hover:text-neon-green  after:transition after:duration-300 after:origin-center" href="">Your Blogs</a></li>
                     <li><a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[1.5px] after:bg-neon-green after:w-full after:scale-x-0 after:hover:scale-x-100 hover:text-neon-green  after:transition after:duration-300 after:origin-right" href="">About</a></li>
                 </ul>
             </div>
@@ -56,10 +56,13 @@
                         <img class="h-20 w-20" src="{{ asset('storage/git.svg') }}" alt="Laravel">
                     </div>
                 </div>
+                <div class="mt-24">
+                    <a href="" class="font-quicksand font-bold relative w-fit block after:block after:content-[''] after:absolute after:h-[1.5px] after:bg-neon-green after:w-full after:scale-x-0 after:hover:scale-x-100 hover:text-neon-green  after:transition after:duration-300 after:origin-center">Start Exploring</a>
+                </div>
             </div>
             <div class="h-[93%] w-[23%] text-right font-quicksand opacity-60 hover:opacity-100 hover:-translate-x-7 transition-all ease-in-out cursor-pointer overflow-hidden">
                 <div class="mb-4 sticky">
-                    <p class="mb-1">Latest Features</p>
+                    <p class="mb-1">Your Latest Posts</p>
                     <hr class="opacity-70" />
                 </div>
                 <div class="h-full w-full overflow-y-scroll no-scrollbar pb-5">
