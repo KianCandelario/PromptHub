@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
-Route::get('/', [UserController::class, 'landing_page']);
+Route::get('/home', [UserController::class, 'home_page']);
 
 Route::get('register', [UserController::class, 'signup']);
 
