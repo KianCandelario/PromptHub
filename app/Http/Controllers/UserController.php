@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
+    public function home_page() {
+        return view('home');
+    }
+
     public function signup() {
         return view('signup');
     }
@@ -48,7 +52,7 @@ class UserController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
  
-            return redirect()->intended('/student');
+            return redirect()->intended('/home');
         }
  
         return back()->withErrors([
