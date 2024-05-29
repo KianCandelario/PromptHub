@@ -54,7 +54,7 @@
 
                 <div class="font-quicksand text-white text-sm flex flex-col justify-center items-center">
                     <p class="mb-1">Don't have an account?</p>
-                    <p class="font-bold underline cursor-pointer hover:text-neon-green">Sign up</p>
+                    <a href="{{url('/register')}}" class="font-bold underline hover:text-neon-green">Sign up</a>
                 </div>
             </div>
         </div>

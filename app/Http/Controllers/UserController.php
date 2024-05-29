@@ -21,6 +21,10 @@ class UserController extends Controller
         return view('signup');
     }
 
+    public function landing_page() {
+        return view('index');
+    }
+
     public function store(Request $request) {
         $validated = $request -> validate([
             "name" => ['required', 'min:4'],
