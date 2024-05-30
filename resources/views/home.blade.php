@@ -29,9 +29,10 @@
                     </button>
                 </form>
 
-                <a class="ml-14" href="">
-                    <img class="h-8 w-8" src="{{ asset('storage/codicon_account.svg') }}" alt="Login">
-                </a>
+                <form action="/logout" method="POST">
+                    @csrf
+                    <input class="ml-5 bg-neon-green font-quicksand px-4 py-2 text-white text-xs font-bold rounded-md cursor-pointer hover:bg-rose-500 transition duration-300" type="submit" value="Log out">
+                </form>
             </div>
         </header>
         <div class="h-[89%] w-full pr-20 flex pt-10">
