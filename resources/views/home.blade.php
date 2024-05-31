@@ -37,8 +37,8 @@
         </header>
         <div class="h-[89%] w-full pr-20 flex pt-10">
             <div class="h-full w-[77%] pr-14 flex flex-col items-center">
-                <div class="font-poppins text-5xl pt-7 pb-11 leading-relaxed text-left font-bold">
-                    <h1>Empowering Your <span class="text-neon-green">Tech Journey</span>: <br />In-Depth Insights, Unbiased Reviews, <br /> and the Latest Innovations.</h1>
+                <div class="w-[85%] font-poppins text-5xl pb-10 leading-relaxed text-left font-bold">
+                    <h1>Welcome, <span class="text-neon-green">UserName</span>! <br /> <span class="text-4xl font-semibold"><span class="text-neon-green">Track Your Tech Adventure</span>: Share your projects, monitor your progress, and continue your journey today!</span></h1>
                 </div>
                 <div class="flex gap-14 ml-7">
                     <div class="w-36 h-32 bg-dark-blue flex justify-center items-center rounded-xl border-2 border-neon-green shadow-lg shadow-slate-500 hover:scale-125 hover:shadow-lg hover:shadow-neon-green transition-all">
@@ -56,9 +56,6 @@
                     <div class="w-36 h-32 bg-dark-blue flex justify-center items-center rounded-xl border-2 border-neon-green shadow-lg shadow-slate-500  hover:scale-125 hover:shadow-lg hover:shadow-neon-green transition">
                         <img class="h-20 w-20" src="{{ asset('storage/git.svg') }}" alt="Laravel">
                     </div>
-                </div>
-                <div class="mt-24">
-                    <a href="" class="font-quicksand font-bold relative w-fit block after:block after:content-[''] after:absolute after:h-[1.5px] after:bg-neon-green after:w-full after:scale-x-0 after:hover:scale-x-100 hover:text-neon-green  after:transition after:duration-300 after:origin-center">Start Exploring</a>
                 </div>
             </div>
             <div class="h-[93%] w-[23%] text-right font-quicksand opacity-60 hover:opacity-100 hover:-translate-x-7 transition-all ease-in-out cursor-pointer overflow-hidden">
