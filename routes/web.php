@@ -7,11 +7,11 @@ use App\Http\Middleware\CheckJustRegistered;
 
 
 Route::get('/', [UserController::class, 'landing_page']);
-Route::get('/home', [UserController::class, 'home_page'])->middleware('auth');
+Route::get('/home', [UserController::class, 'home_page'])->middleware('auth')->name('home');
 
 
 // Register
-Route::get('/registered', [UserController::class, 'registered']);
+Route::get('/registered', [UserController::class, 'registered'])->middleware('auth');
 Route::get('register', [UserController::class, 'signup']);
 Route::post('/store', [UserController::class, 'store']);
 
