@@ -15,8 +15,8 @@
 
             <div>
                 <ul class="flex gap-11 font-poppins font-medium text-sm">
-                    <li><a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[1.5px] after:bg-neon-green after:w-full after:scale-x-0 after:hover:scale-x-100 hover:text-neon-green after:transition after:duration-300 after:origin-left" href="">Home</a></li>
-                    <li><a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[1.5px] after:bg-neon-green after:w-full after:scale-x-0 after:hover:scale-x-100 hover:text-neon-green  after:transition after:duration-300 after:origin-center" href="">Your Blogs</a></li>
+                    <li><a class="border-b-2 border-neon-green text-neon-green" href="{{url('/home')}}">Home</a></li>
+                    <li><a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[1.5px] after:bg-neon-green after:w-full after:scale-x-0 after:hover:scale-x-100 hover:text-neon-green  after:transition after:duration-300 after:origin-center" href="{{url('/blogs')}}">Your Blogs</a></li>
                     <li><a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[1.5px] after:bg-neon-green after:w-full after:scale-x-0 after:hover:scale-x-100 hover:text-neon-green  after:transition after:duration-300 after:origin-right" href="">About</a></li>
                 </ul>
             </div>
