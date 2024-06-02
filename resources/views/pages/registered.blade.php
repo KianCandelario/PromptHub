@@ -18,8 +18,8 @@
             <div class="h-full w-full text-white flex flex-col justify-center items-center p-5">
                 <h1 class="font-poppins font-bold text-3xl text-center">You have <span class="text-neon-green">successfully</span> <br /> registered!</h1>
                 <hr class="w-[70%] my-7" />
-                <h2 class="font-quicksand text-lg text-center">Click the login button below <br /> and sign in to your account to proceed.</h2>
-                <a href="{{url('/login')}}" class="bg-neon-green py-2 px-6 rounded-md font-quicksand text-sm mt-7 border-neon-green border-2 hover:bg-dark-grey transition-all">Login</a>
+                <h2 class="font-quicksand text-lg text-center">Click the button below <br /> to proceed to your account. Enjoy!</h2>
+                <a href="{{url('/home')}}" class="bg-neon-green py-2 px-6 rounded-md font-quicksand text-sm mt-7 border-neon-green border-2 hover:bg-dark-grey transition-all">Go to Home page</a>
             </div>
         </div>
     </div>

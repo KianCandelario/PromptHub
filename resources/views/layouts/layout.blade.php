@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PromptHub</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     @vite('resources/css/app.css')
 
-    <title>Create Post</title>
+    <title>PromptHub</title>
 </head>
 <body>
     <div class="w-screen h-screen bg-dark-grey text-white">
@@ -16,9 +24,9 @@
 
             <div>
                 <ul class="flex gap-11 font-poppins font-medium text-sm">
-                    <li><a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[1.5px] after:bg-neon-green after:w-full after:scale-x-0 after:hover:scale-x-100 hover:text-neon-green after:transition after:duration-300 after:origin-left" href="{{url('/home')}}">Home</a></li>
-                    <li><a class="border-b-2 border-neon-green text-neon-green" href="{{url('/blogs')}}">Your Blogs</a></li>
-                    <li><a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[1.5px] after:bg-neon-green after:w-full after:scale-x-0 after:hover:scale-x-100 hover:text-neon-green  after:transition after:duration-300 after:origin-right" href="">About</a></li>
+                    <li><a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[1.5px] after:bg-neon-green after:w-full after:scale-x-0 after:hover:scale-x-100 hover:text-neon-green after:transition after:duration-300 after:origin-left" href="{{ route('home') }}">Home</a></li>
+                    <li><a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[1.5px] after:bg-neon-green after:w-full after:scale-x-0 after:hover:scale-x-100 hover:text-neon-green  after:transition after:duration-300 after:origin-center" href="">Your Posts</a></li>
+                    <li><a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[1.5px] after:bg-neon-green after:w-full after:scale-x-0 after:hover:scale-x-100 hover:text-neon-green  after:transition after:duration-300 after:origin-right" href="">Create Post</a></li>
                 </ul>
             </div>
 
@@ -36,6 +44,13 @@
                 </form>
             </div>
         </header>
+        <div class="h-[89%] w-full pr-20 flex pt-10">
+            <main>
+                @yield('content')
+            </main>
+        </div>
     </div>
+</body>
+</html>
 </body>
 </html>
