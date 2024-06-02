@@ -14,20 +14,23 @@ use Illuminate\Support\Facades\Auth;
 class UserController extends Controller
 {
     public function home_page() {
-        return view('home');
+        return view('templates.home');
     }
 
     public function signup() {
-        return view('signup');
+        return view('pages.signup');
     }
 
     public function landing_page() {
-        return view('index');
+        return view('pages.index');
     }
 
-    //? TRIAL
     public function registered() {
-        return view('registered');
+        return view('pages.registered');
+    }
+
+    public function signin() {
+        return view('pages.login');
     }
 
     public function store(Request $request) {
@@ -44,10 +47,6 @@ class UserController extends Controller
 
         return redirect()->intended('/registered');
     }
-  
-    public function signin() {
-        return view('login');
-    }
 
     public function authenticate(Request $request): RedirectResponse
     {
@@ -59,7 +58,7 @@ class UserController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
  
-            return redirect()->intended('/home');
+            return redirect()->intended('template.home');
         }
  
         return back()->withErrors([
