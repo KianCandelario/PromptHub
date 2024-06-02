@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use App\Http\Middleware\CheckJustRegistered;
 
@@ -20,3 +21,7 @@ Route::post('/login', [UserController::class, 'authenticate']);
 
 // Log out
 Route::post('/logout', [UserController::class, 'logout']);
+
+// Blog posts
+Route::get('/create-post', [PostController::class, 'createPostPage']);
+Route::post('/create-post', [PostController::class, 'createPost']);
