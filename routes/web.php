@@ -23,5 +23,5 @@ Route::post('/login', [UserController::class, 'authenticate']);
 Route::post('/logout', [UserController::class, 'logout']);
 
 // Blog posts
-Route::get('/create-post', [PostController::class, 'createPostPage']);
+Route::get('/create-post', [PostController::class, 'createPostPage'])->middleware('auth')->name('create-post');
 Route::post('/create-post', [PostController::class, 'createPost']);
