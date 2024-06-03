@@ -58,7 +58,7 @@ class UserController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
  
-            return redirect()->intended('template.home');
+            return redirect()->intended('home');
         }
  
         return back()->withErrors([
