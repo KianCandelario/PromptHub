@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     public function createPostPage() {
-        return view('createpost');
+        return view('templates.createpost');
     }
 
     public function createPost() {
