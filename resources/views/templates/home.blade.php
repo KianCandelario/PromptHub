@@ -3,7 +3,7 @@
 @section('content')
 <div class="h-full w-[77%] pr-14 flex flex-col items-center">
     <div class="w-[85%] font-poppins text-5xl pb-10 leading-relaxed text-left font-bold">
-        <h1>Welcome, <span class="text-neon-green">UserName</span>! <br /> <span class="text-4xl font-semibold"><span class="text-neon-green">Track Your Tech Adventure</span>: Share your projects, monitor your progress, and continue your journey today!</span></h1>
+        <h1>Welcome, <span class="text-neon-green">UserName</span>! <br /> <span class="text-4xl font-semibold"><span class="text-neon-green">Track Your Tech Adventure:</span> Share your projects, monitor your progress, and continue your journey today!</span></h1>
     </div>
     <div class="flex gap-14 ml-7">
         <div class="w-36 h-32 bg-dark-blue flex justify-center items-center rounded-xl border-2 border-neon-green shadow-lg shadow-slate-500 hover:scale-125 hover:shadow-lg hover:shadow-neon-green transition-all">
