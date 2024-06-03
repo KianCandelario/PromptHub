@@ -26,7 +26,7 @@
                 <ul class="flex gap-11 font-poppins font-medium text-sm">
                     <li><a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[1.5px] after:bg-neon-green after:w-full after:scale-x-0 after:hover:scale-x-100 hover:text-neon-green after:transition after:duration-300 after:origin-left" href="{{ route('home') }}">Home</a></li>
                     <li><a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[1.5px] after:bg-neon-green after:w-full after:scale-x-0 after:hover:scale-x-100 hover:text-neon-green  after:transition after:duration-300 after:origin-center" href="">Your Posts</a></li>
-                    <li><a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[1.5px] after:bg-neon-green after:w-full after:scale-x-0 after:hover:scale-x-100 hover:text-neon-green  after:transition after:duration-300 after:origin-right" href="">Create Post</a></li>
+                    <li><a class="relative w-fit block after:block after:content-[''] after:absolute after:h-[1.5px] after:bg-neon-green after:w-full after:scale-x-0 after:hover:scale-x-100 hover:text-neon-green  after:transition after:duration-300 after:origin-right" href="{{ route('create-post') }}">Create Post</a></li>
                 </ul>
             </div>
 
@@ -44,11 +44,9 @@
                 </form>
             </div>
         </header>
-        <div class="h-[89%] w-full pr-20 flex pt-10">
-            <main>
-                @yield('content')
-            </main>
-        </div>
+        <main class="h-[89%] w-full pr-20 flex pt-10">
+            @yield('content')
+        </main>
     </div>
 </body>
 </html>
