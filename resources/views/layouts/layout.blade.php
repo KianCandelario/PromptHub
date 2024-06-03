@@ -34,7 +34,7 @@
                     </form>
                 </div>
             </header>
-            <main class="h-[89%] w-full pr-20 flex pt-10">
+            <main class="h-[89%] w-full flex">
                 @yield('content')
             </main>
         </div>
