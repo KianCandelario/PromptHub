@@ -20,7 +20,7 @@
                     </ul>
                 </div>
 
-                <div class="flex items-center">
+                <div class="flex items-center mt-3">
                     <form class="flex items-center h-8" action="">
                         <input class="h-full text-xs font-quicksand p-2 px-3 bg-transparent border-2 border-neon-green border-r-0 text-white rounded-tl-xl rounded-bl-xl" type="text" placeholder="Search...">
                         <button class="flex justify-center items-center h-full border-neon-green border-2 p-2 px-3 border-l-0 rounded-tr-xl rounded-br-xl" type="submit">
