@@ -14,15 +14,31 @@ use Illuminate\Support\Facades\Auth;
 class UserController extends Controller
 {
     public function home_page() {
-        return view('home');
+        return view('templates.home');
     }
 
     public function signup() {
-        return view('signup');
+        return view('pages.signup');
     }
 
     public function landing_page() {
-        return view('index');
+        return view('pages.index');
+    }
+
+    public function registered() {
+        return view('pages.registered');
+    }
+
+    public function signin() {
+        return view('pages.login');
+    }
+
+    public function about() {
+        return view('templates.about');
+    }
+
+    public function about_out() {
+        return view('templates.about_out');
     }
 
     public function store(Request $request) {
@@ -36,10 +52,8 @@ class UserController extends Controller
         $user = User::create($validated);
 
         auth()->login($user);
-    }
-  
-    public function signin() {
-        return view('login');
+
+        return redirect()->intended('/registered');
     }
 
     public function authenticate(Request $request): RedirectResponse
@@ -52,11 +66,16 @@ class UserController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
  
-            return redirect()->intended('/home');
+            return redirect()->intended('home');
         }
  
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
         ])->onlyInput('email');
+    }
+
+    public function logout() {
+        auth()->logout();
+        return redirect()->intended('/');
     }
 }

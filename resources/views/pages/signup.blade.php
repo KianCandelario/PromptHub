@@ -23,16 +23,16 @@
                     @csrf
                     <div class="w-full flex flex-col">
                         <label class="ml-1 mb-1 text-white font-poppins text-xs" for="name">Username</label>
-                        <input class="mb-3 py-3 px-4 text-xs font-quicksand rounded-md" id="name" name="name" type="text" placeholder="Enter username">
+                        <input class="mb-3 py-3 px-4 text-xs font-quicksand rounded-md" id="name" name="name" type="text" placeholder="Enter username" required>
 
                         <label class="ml-1 mb-1 text-white font-poppins text-xs" for="email">Email</label>
-                        <input class="mb-3 py-3 px-4 text-xs font-quicksand rounded-md" id="email" name="email" type="text" placeholder="Enter email">
+                        <input class="mb-3 py-3 px-4 text-xs font-quicksand rounded-md" id="email" name="email" type="text" placeholder="Enter email" required>
 
                         <label class="ml-1 mb-1 text-white font-poppins text-xs" for="password">Password</label>
-                        <input class="mb-3 py-3 px-4 text-xs font-quicksand rounded-md" id="password" name="password" type="password" placeholder="Enter password">
+                        <input class="mb-3 py-3 px-4 text-xs font-quicksand rounded-md" id="password" name="password" type="password" placeholder="Enter password" required>
 
                         <label class="ml-1 mb-1 text-white font-poppins text-xs" for="password_confirmation">Confirm Password</label>
-                        <input class="mb-3 py-3 px-4 text-xs font-quicksand rounded-md" id="password_confirmation" name="password_confirmation" type="password" placeholder="Confirm your password">
+                        <input class="mb-3 py-3 px-4 text-xs font-quicksand rounded-md" id="password_confirmation" name="password_confirmation" type="password" placeholder="Confirm your password" required>
                     </div>
 
                     <input class="w-[45%] h-9 font-bold bg-[#01C38D] font-quicksand text-xs cursor-pointer mt-4 rounded-md text-white hover:bg-white hover:text-[#191E29] hover:scale-100 hover:translate-y-1 transition duration-300" type="submit" value="Register">
