@@ -33,6 +33,14 @@ class UserController extends Controller
         return view('pages.login');
     }
 
+    public function about() {
+        return view('templates.about');
+    }
+
+    public function about_out() {
+        return view('templates.about_out');
+    }
+
     public function store(Request $request) {
         $validated = $request -> validate([
             "name" => ['required', 'min:4'],
