@@ -28,3 +28,9 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+
+.active {
+    font-weight: bold;
+    color: #01C38D;
+    border-bottom: 2px solid #01C38D;
+}
