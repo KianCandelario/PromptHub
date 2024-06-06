@@ -15,8 +15,8 @@
                 <h1 class="font-poppins text-6xl font-black mr-3">
                     <span class="text-neon-green">Prompt</span>Hub
                 </h1>
-                <a href="">
-                    <img class="h-7 w-7" src="{{ asset('storage/question-mark.svg') }}" alt="Question Mark">
+                <a href="/about-out">
+                    <img class="h-7 w-7" src="{{ asset('storage/question-mark.svg') }}" title="Go to About page" alt="Question Mark">
                 </a>
             </div>
             <div class="w-full">

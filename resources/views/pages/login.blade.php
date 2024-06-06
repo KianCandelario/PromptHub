@@ -16,15 +16,26 @@
                 <div class="flex flex-col justify-center items-center">
                     <h1 class="text-neon-green font-poppins font-bold text-6xl mb-5">Prompt<span class="text-white">Hub</span></h1>
                     <div class="w-[60%]">
-                        <p class="text-white text-center font-quicksand">Welcome to <span class="text-neon-green">PromptHub</span>, where creativity thrives! Share and discover AI prompts from a vibrant community of creators. Explore endless inspiration or contribute your own ideas. Join us at <span class="text-neon-green">PromptHub</span> and unleash your imagination!</p>
+                        <p class="text-white text-center font-quicksand">Welcome to <span class="text-neon-green">PromptHub</span>, your personal tech diary! Here, track your technology journey with ease and privacy. Document your insights, discoveries, and experiences with various technologies in your digital diary. Join us today and start capturing your tech discoveries effortlessly!
                     </div>
                 </div>
             </div>
         </div>
         <div class="w-[25%] h-full bg-dark-blue flex flex-col justify-center items-center">
-            <div class="bg-light-grey h-[50%] w-[88%] rounded-xl">
+            <div class="bg-light-grey h-[55%] w-[88%] rounded-xl">
                 <form class="w-full h-full flex flex-col justify-center items-center" action="/login" method="POST">
                     @csrf
+
+                    @if ($errors->any())
+                        <div id="error-message" class="bg-red-500 font-quicksand text-white p-2 mb-2 rounded text-xs">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
                     <div class="w-[80%] mb-5">
                         <div class="flex items-center w-full">
                             <img class="h-14 mr-2" src="{{ asset('storage/material-symbols_login.svg') }}" alt="Login Icon">
@@ -60,4 +71,13 @@
         </div>
     </div>
 </body>
+<script>
+    // Function to hide the error message after a specific duration
+    setTimeout(function() {
+        var errorMessage = document.getElementById('error-message');
+        if (errorMessage) {
+            errorMessage.style.display = 'none';
+        }
+    }, 3000); // 3000 milliseconds = 3 seconds
+</script>
 </html>
