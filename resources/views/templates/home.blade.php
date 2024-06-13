@@ -24,7 +24,7 @@
             </div>
         </div>
     </div>
-    <div class="h-[93%] w-[23%] text-right font-quicksand opacity-60 hover:opacity-100 hover:-translate-x-7 transition-all ease-in-out cursor-pointer overflow-hidden">
+    <div class="h-[93%] w-[23%] text-right font-quicksand opacity-60 hover:opacity-100 hover:-translate-x-7 transition-all ease-in-out overflow-hidden">
         <div class="mb-4 sticky">
             <p class="mb-1">Your Latest Posts</p>
             <hr class="opacity-70" />
